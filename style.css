@@ -1,0 +1,118 @@
+
+
+:root{
+  --primary:#2F2B8C;
+  --primary-dark:#1B1E59;
+  --primary-light:#8979F3;
+  --gray:#666666 ;
+  --gray-light:#F2DFE2;
+}
+    
+   
+   
+   
+  body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary);
+  }
+
+  div{
+    background-color: var(--gray-light);
+    width: 60%;/*Largura inicial*/
+    max-width: 340px;/*(340+30+30 de paddings na largura, seriam os 400 que coloquei inicialmente*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  img{
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--primary);
+  }
+
+  h1,h2,h3,h4,h5,h6{
+    margin: 0;
+  }
+  
+  h1{
+color:var(--primary-dark);
+font-size: 32px;
+ }
+
+h2{
+    color:var(--primary-light);
+    font-size: 20px;
+}
+
+p{
+    color:var(--gray) ;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    margin-bottom: 5px;
+}
+
+/*Links que estão DENTRO de um <li>*/
+li a{
+    color: #fff;
+    background-color: var(--primary);
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+/*qUANDO PASSA O MOUSE*/
+li a:hover{
+    background-color:var(--primary-dark);
+}
+/*Quando aperta o click*/
+
+li a:active{
+background-color: var(--primary-light);
+}
+
+#copyright{
+    color: var(--primary);
+}
+
+/*MEDIA QUERY*/
+@media (min-width:1280px){
+
+  #link-app{
+    display: none;
+  }
+}
+
+@media(max-width:414px){
+
+  div{
+    margin-top: 50px;
+  }
+
+  img{
+    width: 80px;
+  }
+
+  h1{
+    font-size: 24px;
+  }
+
+  h2{
+    font-size: 16px;
+  }
+}
+
+
+
+
+
